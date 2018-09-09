@@ -1,0 +1,27 @@
+diff a/assign_SMD/src/assign_smd/Car.java b/assign_SMD/src/assign_smd/Car.java	(rejected hunks)
+@@ -0,0 +1,25 @@
++/*
++ * To change this license header, choose License Headers in Project Properties.
++ * To change this template file, choose Tools | Templates
++ * and open the template in the editor.
++ */
++package assign_smd;
++
++/**
++ *
++ * @author Admin
++ */
++abstract class Car implements Paintable,Saleable {
++    abstract void maintainence();
++    @Override
++    public void paint(){
++        System.out.println("Paint is Red");
++    }
++    @Override
++    public void sale(){
++        System.out.println("The car is for sale");
++    }
++    public void modelYear(){
++    System.out.println("These are a 2018 model cars");
++    }
++}
